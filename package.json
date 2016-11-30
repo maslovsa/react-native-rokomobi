@@ -1,9 +1,9 @@
 {
   "name": "react-native-rokomobi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "RokoMobi",
   "license": "free",
-  "description": "Plugin for RokoMobi portal",
+  "description": "React Native Plugin for RokoMobi portal",
   "devDependencies": {},
   "keywords": [
     "React-Native",
