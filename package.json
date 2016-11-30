@@ -1,0 +1,17 @@
+{
+  "author": "RokoMobi",
+  "license": "free",
+  "description": "Plugin for RokoMobi portal",
+  "devDependencies": {},
+  "keywords": [
+    "React-Native",
+    "ios",
+    "android"
+  ],
+  "name": "react-native-rokomobi",
+  "version": "0.0.1",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-native": "file:../../react-native"
+  }
+}
