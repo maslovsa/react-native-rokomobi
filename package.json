@@ -1,4 +1,6 @@
 {
+  "name": "react-native-rokomobi",
+  "version": "0.0.1",
   "author": "RokoMobi",
   "license": "free",
   "description": "Plugin for RokoMobi portal",
@@ -9,10 +11,16 @@
     "ios",
     "android"
   ],
-  "name": "react-native-rokomobi",
-  "version": "0.0.1",
   "dependencies": {
     "react": "^15.4.1",
-    "react-native": "file:../../react-native"
-  }
+    "react-native": "0.38.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maslovsa/react-native-rokomob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maslovsa/react-native-rokomobi/issues"
+  },
+  "homepage": "https://github.com/maslovsa/react-native-rokomobi#readme"
 }

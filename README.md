@@ -1,23 +1,23 @@
 # React Native RokoMobi Plugin
 
-* Plugin allows to integrate with RokoMobi Portal
++ Plugin allows to integrate with RokoMobi Portal
 
 ## Prerequisites
 
-*  Install npm here - https://nodejs.org/en/
++  Install npm here - https://nodejs.org/en/
 or run in console 
 
 ```bash
 curl https://npmjs.org/install.sh | sh
 ```
 
-*  Install Node - 
++  Install Node - 
 
 ```bash
 brew install node
 ```
 
-*  The React Native CLI  - 
++  The React Native CLI  - 
 
 ```bash
 npm install -g react-native-cli
@@ -27,19 +27,19 @@ npm install -g react-native-cli
 
 ## Using Plugin
 
-* Create a new React-Native
++ Create a new React-Native
 
 ```bash
 react-native init AwesomeProject
 ```
 
-* Test application (ios)
++ Test application (ios)
 
 ```bash
 react-native run-ios
 ```
 
-* Install the plugin
++ Install the plugin
 
 ```bash
 cd AwesomeProject
