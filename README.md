@@ -44,6 +44,27 @@ react-native run-ios
 ```bash
 cd AwesomeProject
 npm install react-native-rokomobi --save
+npm install react-native-button --save
+```
+
++ Add code to your 
+
++ [ios] Add RokoMobi project to your Project
+
+* Goto npm_modules/react-native-rokomobi/ios/ and Drag RokoMobi.xcodeproj to your Project Tree
+
+![Image of Dragging](https://api.monosnap.com/rpc/file/download?id=08MVqrBxQMGCnfqSdjSQZRnevzOu9f)
+
+** check ** Copy items if needed
+
++ [ios] Add your credientals to Info.plist
+
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<string>QbFMYfZLnDdzhrJyZNCDetEiF0PlOtoxKk/gTeXj4C4=</string>
+</plist>
 ```
 
 ## More Info
