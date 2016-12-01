@@ -5,19 +5,19 @@
 ## Prerequisites
 
 +  Install npm here - https://nodejs.org/en/
-or run in console 
+or run in console
 
 ```bash
 curl https://npmjs.org/install.sh | sh
 ```
 
-+  Install Node - 
++  Install Node -
 
 ```bash
 brew install node
 ```
 
-+  The React Native CLI  - 
++  The React Native CLI  -
 
 ```bash
 npm install -g react-native-cli
