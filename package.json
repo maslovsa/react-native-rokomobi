@@ -1,6 +1,6 @@
 {
   "name": "react-native-rokomobi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "RokoMobi",
   "license": "free",
   "description": "React Native Plugin for RokoMobi portal",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maslovsa/react-native-rokomob.git"
+    "url": "git+https://github.com/maslovsa/react-native-rokomobi.git"
   },
   "bugs": {
     "url": "https://github.com/maslovsa/react-native-rokomobi/issues"
