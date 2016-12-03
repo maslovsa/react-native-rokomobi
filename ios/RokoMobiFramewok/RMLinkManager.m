@@ -76,12 +76,12 @@ RCT_EXPORT_METHOD(createLink:(NSDictionary*)params withCallBack:(RCTResponseSend
 }
 
 - (void)linkManager:(nonnull ROKOLinkManager *)manager didOpenDeepLink:(nonnull ROKOLink *)link {
-    NSDictionary *representation = [EKSerializer serializeObject:link withMapping:[ROKOLink objectMapping]];
-    _callback(@[[NSNull null], representation]); // TODO: check
+  NSDictionary *representation = [EKSerializer serializeObject:link withMapping:[ROKOLink objectMapping]];
+  _callback(@[[NSNull null], representation]); // TODO: check
 }
 
 - (void)linkManager:(nonnull ROKOLinkManager *)manager didFailToOpenDeepLinkWithError:(nullable NSError *)error {
-    _callback(@[error.description, @"Error"]); // TODO: check
+  _callback(@[error.description, @"Error"]); // TODO: check
 }
 
 @end

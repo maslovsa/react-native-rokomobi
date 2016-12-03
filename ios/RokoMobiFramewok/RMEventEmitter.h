@@ -11,6 +11,7 @@
 
 @interface RMEventEmitter : RCTEventEmitter <RCTBridgeModule>
 
-//- (void)sendEventWithName:(NSString *)eventName body:(NSDictionary*)body;
-
+- (void)handleNotification:(NSDictionary*)userInfo;
+- (void)handleDeepLink:(NSDictionary*)userInfo;
+  
 @end

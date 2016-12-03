@@ -8,17 +8,35 @@
 
 #import "RMEventEmitter.h"
 
+NSString *const kPushNotication = @"PushNotication";
+NSString *const kDeepLink = @"DeepLink";
+
 @implementation RMEventEmitter
 
 RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"RMEventEmitter"];
+  return @[kPushNotication,kDeepLink];
 }
 
-//- (void)sendEventWithName:(NSString *)eventName body:(NSDictionary*)body {
-//  [self sendEventWithName:eventName body: body];
-//}
+RCT_EXPORT_METHOD(startListening){
+  NSLog(@"RMEventEmitter - startListening");
+}
+
+- (void)handleNotification:(NSDictionary*)userInfo {
+  [self sendEventWithName: kPushNotication body: userInfo];
+}
+
+- (void)handleDeepLink:(NSDictionary*)userInfo {
+  [self sendEventWithName: kDeepLink body: userInfo];
+}
+
+- (void)sendEventWithName:(NSString *)eventName body:(id)body {
+  [self.bridge enqueueJSCall:@"RCTDeviceEventEmitter"
+                      method:@"emit"
+                        args:body ? @[eventName, body] : @[eventName]
+                  completion:NULL];
+}
 
 @end

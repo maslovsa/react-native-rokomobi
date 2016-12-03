@@ -12,6 +12,9 @@
 #import "ROKOPortalInfo+ROKOPortalInfoMapper.h"
 #import "ROKOSessionInfo+ROKOSessionInfoMapper.h"
 #import "ROKOUserObject+ROKOUserObjectMapper.h"
+#import "RCTBridge.h"
+#import "RCTEventDispatcher.h"
+#import "RCTEventEmitter.h"
 #import "RMEventEmitter.h"
 
 NSString *const kUserNameKey = @"userName";
@@ -48,10 +51,6 @@ RCT_EXPORT_METHOD(login:(NSDictionary *)params withCallBack:(RCTResponseSenderBl
 }
 
 RCT_EXPORT_METHOD(setUser:(NSDictionary *)params withCallBack:(RCTResponseSenderBlock)callback) {
-  RMEventEmitter *emitter = [RMEventEmitter new];
-  emitter.bridge = _bridge;
-  [emitter sendEventWithName:@"RMEventEmitter" body:@{@"name": @"aa"}];
-  
   if (params) {
     NSString *userName = params[kUserNameKey];
     NSString *referralCode = params[kReferralCodeKey];

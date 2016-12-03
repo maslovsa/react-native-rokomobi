@@ -79,9 +79,7 @@ RCT_EXPORT_METHOD(activateDiscountWithCode:(NSString*)code withCallBack:(RCTResp
 }
 
 RCT_EXPORT_METHOD(completeDiscountWithCode:(NSString*)code withCallBack:(RCTResponseSenderBlock)callback) {
-  if (code) {
-    __weak __typeof__(self) weakSelf = self;
-    
+  if (code) {    
     ROKOReferral *referral = [[ROKOReferral alloc] init];
     [referral completeDiscountWithCode:code completionBlock:^(NSNumber *discountId, NSNumber *referrerId, NSError *error) {
       if (error) {
