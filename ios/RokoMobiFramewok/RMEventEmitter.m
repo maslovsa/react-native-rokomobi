@@ -15,8 +15,7 @@ NSString *const kDeepLink = @"DeepLink";
 
 RCT_EXPORT_MODULE();
 
-- (NSArray<NSString *> *)supportedEvents
-{
+- (NSArray<NSString *> *)supportedEvents {
   return @[kPushNotication,kDeepLink];
 }
 

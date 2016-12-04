@@ -95,11 +95,11 @@ RCT_EXPORT_METHOD(completeDiscountWithCode:(NSString*)code withCallBack:(RCTResp
 
 RCT_EXPORT_METHOD(inviteFriends) {
   ROKOInviteFriendsViewController* inviteFriendsController = [ROKOInviteFriendsViewController buildController];
-  dispatch_async(dispatch_get_main_queue(), ^{
+  if (inviteFriendsController) {
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     UIViewController *rootViewController = keyWindow.rootViewController;
     [rootViewController presentViewController:inviteFriendsController animated:YES completion:nil];
-  });
+  }
 }
 
 @end
