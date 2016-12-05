@@ -32,6 +32,14 @@ NSString *const kLinkIdKey = @"linkId";
 
 RCT_EXPORT_MODULE();
 
+- (NSDictionary *)constantsToExport
+{
+  return @{ @"ROKOLinkTypeManual" : @(ROKOLinkTypeManual),
+            @"ROKOLinkTypePromo" : @(ROKOLinkTypePromo),
+            @"ROKOLinkTypeReferral" : @(ROKOLinkTypeReferral),
+            @"ROKOLinkTypeShare" : @(ROKOLinkTypeShare)};
+};
+
 RCT_EXPORT_METHOD(handleDeepLink:(NSString*)link withCallBack:(RCTResponseSenderBlock)callback) {
   _linkManager = [[ROKOLinkManager alloc] init];
   if (link) {
@@ -47,10 +55,9 @@ RCT_EXPORT_METHOD(handleDeepLink:(NSString*)link withCallBack:(RCTResponseSender
 
 
 RCT_EXPORT_METHOD(createLink:(NSDictionary*)params withCallBack:(RCTResponseSenderBlock)callback) {
+  ROKOLinkManager *linkManager = [[ROKOLinkManager alloc] init];
   if (params) {
-    _linkManager.delegate = self;
-    
-    [_linkManager createLinkWithName:params[kNameKey]
+    [linkManager createLinkWithName:params[kNameKey]
                                 type:[params[kTypeKey] intValue]
                            sourceURL:params[kSourceURLKey]
                          channelName:params[kChannelNameKey]
@@ -69,7 +76,7 @@ RCT_EXPORT_METHOD(createLink:(NSDictionary*)params withCallBack:(RCTResponseSend
                          if (linkId) {
                            dictionary[kLinkIdKey] = linkId;
                          }
-                         _callback(@[[NSNull null], dictionary]);
+                         callback(@[[NSNull null], dictionary]);
                        }
                      }];
   }
@@ -77,11 +84,11 @@ RCT_EXPORT_METHOD(createLink:(NSDictionary*)params withCallBack:(RCTResponseSend
 
 - (void)linkManager:(nonnull ROKOLinkManager *)manager didOpenDeepLink:(nonnull ROKOLink *)link {
   NSDictionary *representation = [EKSerializer serializeObject:link withMapping:[ROKOLink objectMapping]];
-  _callback(@[[NSNull null], representation]); // TODO: check
+  _callback(@[[NSNull null], representation]);
 }
 
 - (void)linkManager:(nonnull ROKOLinkManager *)manager didFailToOpenDeepLinkWithError:(nullable NSError *)error {
-  _callback(@[error.description, @"Error"]); // TODO: check
+  _callback(@[error.description, @"Error"]);
 }
 
 @end
