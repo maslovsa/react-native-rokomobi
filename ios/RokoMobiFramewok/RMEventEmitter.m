@@ -10,13 +10,14 @@
 
 NSString *const kPushNotication = @"PushNotication";
 NSString *const kDeepLink = @"DeepLink";
+NSString *const kShareStatus = @"ShareStatus";
 
 @implementation RMEventEmitter
 
 RCT_EXPORT_MODULE();
 
 - (NSArray<NSString *> *)supportedEvents {
-  return @[kPushNotication,kDeepLink];
+  return @[kPushNotication,kDeepLink, kShareStatus];
 }
 
 RCT_EXPORT_METHOD(startListening){
@@ -29,6 +30,10 @@ RCT_EXPORT_METHOD(startListening){
 
 - (void)handleDeepLink:(NSDictionary*)userInfo {
   [self sendEventWithName: kDeepLink body: userInfo];
+}
+
+- (void)postShareStatus:(NSDictionary*)userInfo {
+  [self sendEventWithName: kShareStatus body: userInfo];
 }
 
 - (void)sendEventWithName:(NSString *)eventName body:(id)body {

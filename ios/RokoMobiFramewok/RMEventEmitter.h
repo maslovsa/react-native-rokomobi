@@ -13,5 +13,6 @@
 
 - (void)handleNotification:(NSDictionary*)userInfo;
 - (void)handleDeepLink:(NSDictionary*)userInfo;
-  
+- (void)postShareStatus:(NSDictionary*)userInfo;
+
 @end

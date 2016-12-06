@@ -53,10 +53,10 @@ RCT_EXPORT_METHOD(handleDeepLink:(NSString*)link withCallBack:(RCTResponseSender
   }
 }
 
-
 RCT_EXPORT_METHOD(createLink:(NSDictionary*)params withCallBack:(RCTResponseSenderBlock)callback) {
   ROKOLinkManager *linkManager = [[ROKOLinkManager alloc] init];
   if (params) {
+    
     [linkManager createLinkWithName:params[kNameKey]
                                 type:[params[kTypeKey] intValue]
                            sourceURL:params[kSourceURLKey]

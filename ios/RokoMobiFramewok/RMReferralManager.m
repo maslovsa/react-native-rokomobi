@@ -79,7 +79,7 @@ RCT_EXPORT_METHOD(activateDiscountWithCode:(NSString*)code withCallBack:(RCTResp
 }
 
 RCT_EXPORT_METHOD(completeDiscountWithCode:(NSString*)code withCallBack:(RCTResponseSenderBlock)callback) {
-  if (code) {    
+  if (code) {
     ROKOReferral *referral = [[ROKOReferral alloc] init];
     [referral completeDiscountWithCode:code completionBlock:^(NSNumber *discountId, NSNumber *referrerId, NSError *error) {
       if (error) {
@@ -96,9 +96,11 @@ RCT_EXPORT_METHOD(completeDiscountWithCode:(NSString*)code withCallBack:(RCTResp
 RCT_EXPORT_METHOD(inviteFriends) {
   ROKOInviteFriendsViewController* inviteFriendsController = [ROKOInviteFriendsViewController buildController];
   if (inviteFriendsController) {
-    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-    UIViewController *rootViewController = keyWindow.rootViewController;
-    [rootViewController presentViewController:inviteFriendsController animated:YES completion:nil];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+      UIViewController *rootViewController = keyWindow.rootViewController;
+      [rootViewController presentViewController:inviteFriendsController animated:YES completion:nil];
+    });
   }
 }
 
