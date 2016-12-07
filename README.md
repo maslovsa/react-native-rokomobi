@@ -164,18 +164,30 @@ Use RMPromoManager for Promo issues.
 ```JavaScript
 _handleLoadPromo() {
   var RMPromoManager = NativeModules.RMPromoManager;
-  RMPromoManager.loadPromo(this.state.promoCode, (error, events) => {
+  RMPromoManager.loadPromo(this.state.promoCode, (error, message) => {
   if (error) {
     console.error(error);
   } else {
-    console.log(events)
+    console.log(message)
   }
   })
 }
+```
 
+**message** is a dictionary with these fields
+* **applicability** -   Who can use discount (Unspecified, AllUsers, Segments)
+* **startDate** - When the promo campaign starts
+* **endDate** - When the promo campaign finishes
+* **isAlwaysActive** - Indicates the promo campaign is forever. If this property is YES, values of startDate and endDate are not important
+* **isSingleUseOnly** - The promo code can be used just once
+* **autoApplyOnAppOpen** - Indicates if the discount should be applied automatically on app start
+* **cannotBeCombined** - Indicates if the discount can be combined with other discounts
+
+```JavaScript
 _handleMarkPromoCodeAsUsed() {
   var RMPromoManager = NativeModules.RMPromoManager;
-  RMPromoManager.markPromoCodeAsUsed({"promoCode":this.state.promoCode}, (error, events) => {
+  var params = {"promoCode":this.state.promoCode}
+  RMPromoManager.markPromoCodeAsUsed(params, (error, events) => {
   if (error) {
     console.error(error);
   } else {
@@ -184,6 +196,11 @@ _handleMarkPromoCodeAsUsed() {
   })
 }
 ```
+**params** is a dictionary with these fields
+* **promoCode**  - Promo code to be marked
+* **valueOfPurchase** - Purchase value. Needed for analytics
+* **valueOfDiscount** - Total discount. Needed for analytics
+* **deliveryType** - The way this promo code was obtained
 
 ## Referral
 
@@ -203,16 +220,34 @@ _handleLoadReferralDiscountsList() {
 
 _handleLoadDiscountInfoWithCode() {
   var RMReferralManager = NativeModules.RMReferralManager;
-  RMReferralManager.loadDiscountInfoWithCode(this.state.promoCode, (error, events) => {
+  RMReferralManager.loadDiscountInfoWithCode(this.state.promoCode, (error, message) => {
   if (error) {
     console.error(error);
   } else {
-    console.log(events)
-    Alert.alert('_handleLoadDiscountInfoWithCode', events)
+    console.log(message)
+    Alert.alert('_handleLoadDiscountInfoWithCode', message)
   }
   })
 }
 ```
+**message** is a dictionary with these fields
+* **active** - Indicates whether the campaign is active
+* **name**- Company name
+* **recipientDiscount**  - ROKOReferralDiscountInfo
+* **rewardDiscount** - ROKOReferralDiscountInfo
+
+**ROKOReferralDiscountInfo** type is a dictionary with these fields
+* **enabled** - Indicates whether the discount applying is possible
+* **value** - Discount value
+* **limit** - Discount limit. Applicable for ROKODiscountTypeMatching only
+* **type** - Discount type
+
+**ROKODiscountType** type is a dictionary with these fields
+* **ROKODiscountTypeUnspecified** - Unknown discount type
+* **ROKODiscountTypePercent** - Percent discount
+* **ROKODiscountTypeFixed** -  The discount value is fixed
+* **ROKODiscountTypeFree** - The goods are absolutely free
+* **ROKODiscountTypeMatching** - Matching discount
 
 ## Deep Links
 To handle Deep links - subscribe to handling.
@@ -231,7 +266,7 @@ var subscriptionDeepLink = myModuleEvt.addListener(
 subscriptionDeepLink.remove();
 ```
 
-*data* is a dictionary with these fields
+**data** is a dictionary with these fields
 * **name** - Name of the link
 * **createDate** - Date when the link was created
 * **updateDate** - Date when the link was updated on Portal
@@ -271,7 +306,7 @@ _handleDeepLink() {
 
 ```
 
-*data* has the same fields as *data* on handling events.
+**data** has the same fields as **data**  on handling events.
 
 ## Share
 
