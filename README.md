@@ -157,6 +157,151 @@ AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 </plist>
 ```
 
+## Promo
+
+Use RMPromoManager for Promo issues.
+
+```JavaScript
+_handleLoadPromo() {
+  var RMPromoManager = NativeModules.RMPromoManager;
+  RMPromoManager.loadPromo(this.state.promoCode, (error, events) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(events)
+  }
+  })
+}
+
+_handleMarkPromoCodeAsUsed() {
+  var RMPromoManager = NativeModules.RMPromoManager;
+  RMPromoManager.markPromoCodeAsUsed({"promoCode":this.state.promoCode}, (error, events) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(events)
+  }
+  })
+}
+```
+
+## Referral
+
+Use RMReferralManager for Promo issues.
+
+```JavaScript
+_handleLoadReferralDiscountsList() {
+  var RMReferralManager = NativeModules.RMReferralManager;
+  RMReferralManager.loadReferralDiscountsList((error, events) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(events)
+  }
+  })
+}
+
+_handleLoadDiscountInfoWithCode() {
+  var RMReferralManager = NativeModules.RMReferralManager;
+  RMReferralManager.loadDiscountInfoWithCode(this.state.promoCode, (error, events) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(events)
+    Alert.alert('_handleLoadDiscountInfoWithCode', events)
+  }
+  })
+}
+```
+
+## Deep Links
+
+```JavaScript
+_handleCreateDeepLink() {
+  var RMLinkManager = NativeModules.RMLinkManager;
+  RMLinkManager.createLink({type: RMLinkManager.ROKOLinkTypeShare}, (error, events) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(events.linkURL)
+    this.setState({deepLink : events.linkURL})
+  }
+  })
+}
+
+_handleDeepLink() {
+  var RMLinkManager = NativeModules.RMLinkManager;
+  RMLinkManager.handleDeepLink(this.state.deepLink, (error, data) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data)
+    Alert.alert('handleDeepLink', data.createDate +'\n'+ data.type + '\n' + data.name)
+  }
+  })
+}
+
+```
+
+## Share
+
+```JavaScript
+_handleShare() {
+  var RMShareManager = NativeModules.RMShareManager;
+  var params = {contentId: this.state.contentId
+  RMShareManager.share(params, text: this.state.shareText})
+}
+
+
+const myModuleEvt = new NativeEventEmitter(NativeModules.RMEventEmitter)
+var subscriptionShare = myModuleEvt.addListener(
+  'ShareStatus',
+  (data) => {
+
+    if (data.channel == NativeModules.RMShareManager.ROKOShareChannelTypeEmail) {
+      console.log("it was EMAIL")
+    }
+    if (data.status == "Canceled") {
+      console.log("status is Canceled")
+    }
+    console.log(data)
+  }
+);
+
+...
+// Don't forget to unsubscribe, typically in componentWillUnmount
+subscriptionShare.remove();
+```
+Other fields of Params are :
+
+* **contentId** - Unique identifier of sharing content.*** [required field] ***
+* **displayMessage** - Default comment for sharing content
+* **text** - Text to be shared
+* **contentTitle** - Title of sharing content
+* **contentURL** - URL of sharing content
+* **linkId** - Identifier of sharing portal link. Set this property if you share deep link to get correct reports on ROKO portal.
+* **ShareChannelTypeFacebook** - Sets special text for Facebook only
+* **ShareChannelTypeTwitter** - Sets special text for Twitter only
+* **ShareChannelTypeMessage** - Sets special text for SMS only
+
+"data.status
+* **Done** - Successfully shared,
+* **Canceled** - Sharing dialog canceled by user
+* **Failed** - Sharing failed
+
+```JavaScript
+_handleShareCompleteForChannel() {
+  var RMShareManager = NativeModules.RMShareManager;
+  RMShareManager.shareCompleteForChannel({channelType: "sms",contentId: this.state.contentId}, (error, data) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data)
+  }
+  })
+}
+```
+
 ## More Info
 
 * For more information about RokoMobi integration [the documentation](http://docs.roko.mobi/docs/cordova)
