@@ -215,6 +215,34 @@ _handleLoadDiscountInfoWithCode() {
 ```
 
 ## Deep Links
+To handle Deep links - subscribe to handling.
+
+```JavaScript
+const myModuleEvt = new NativeEventEmitter(NativeModules.RMEventEmitter)
+var subscriptionDeepLink = myModuleEvt.addListener(
+  'DeepLink',
+  (data) => {
+    console.log("DeepLink")
+    console.log(data)
+  }
+);
+...
+// Don't forget to unsubscribe, typically in componentWillUnmount
+subscriptionDeepLink.remove();
+```
+
+*data* is a dictionary with these fields
+* **name** - Name of the link
+* **createDate** - Date when the link was created
+* **updateDate** - Date when the link was updated on Portal
+* **shareChannel** - Share channel name
+* **vanityLink** - Meaningful part of the link url (after domain)
+* **customDomainLink** - Link with custom domain. For example, yourapp://link
+* **type** - Type of the link (ROKOLinkType)
+* **referralCode** - Referral code this link is targeted to
+* **promoCode** - Promo code this link is targeted to
+
+
 
 ```JavaScript
 _handleCreateDeepLink() {
@@ -243,6 +271,8 @@ _handleDeepLink() {
 
 ```
 
+*data* has the same fields as *data* on handling events.
+
 ## Share
 
 ```JavaScript
@@ -251,7 +281,6 @@ _handleShare() {
   var params = {contentId: this.state.contentId
   RMShareManager.share(params, text: this.state.shareText})
 }
-
 
 const myModuleEvt = new NativeEventEmitter(NativeModules.RMEventEmitter)
 var subscriptionShare = myModuleEvt.addListener(
@@ -284,7 +313,7 @@ Other fields of Params are :
 * **ShareChannelTypeTwitter** - Sets special text for Twitter only
 * **ShareChannelTypeMessage** - Sets special text for SMS only
 
-"data.status
+* "data.status" can be:
 * **Done** - Successfully shared,
 * **Canceled** - Sharing dialog canceled by user
 * **Failed** - Sharing failed
@@ -292,7 +321,8 @@ Other fields of Params are :
 ```JavaScript
 _handleShareCompleteForChannel() {
   var RMShareManager = NativeModules.RMShareManager;
-  RMShareManager.shareCompleteForChannel({channelType: "sms",contentId: this.state.contentId}, (error, data) => {
+  var param = {channelType: "sms",contentId: this.state.contentId}
+  RMShareManager.shareCompleteForChannel(param, (error, data) => {
   if (error) {
     console.error(error);
   } else {
@@ -301,6 +331,11 @@ _handleShareCompleteForChannel() {
   })
 }
 ```
+Other fields of Params are :
+
+* **contentId** - Unique identifier of sharing content.*** [required field] ***
+* **channelType** - "sms", "twitter", "facebook", "email" or "copy"
+* **linkId** - Optional Identifier of sharing portal link. Set this property if you share deep link to get correct reports on ROKO portal.
 
 ## More Info
 
