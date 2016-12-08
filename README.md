@@ -206,6 +206,15 @@ _handleMarkPromoCodeAsUsed() {
 
 Use RMReferralManager for Promo issues.
 
+Use inviteFriends() function to show inviteFriends Dialog.
+```JavaScript
+<Button
+style={styles.buttons3}
+onPress={() => NativeModules.RMReferralManager.inviteFriends()}>
+InviteFriends
+</Button>
+```
+
 ```JavaScript
 _handleLoadReferralDiscountsList() {
   var RMReferralManager = NativeModules.RMReferralManager;
