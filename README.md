@@ -1,3 +1,6 @@
+[![NPM](https://nodei.co/npm/react-native-rokomobi.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-rokomobi/)  
+
+
 # React Native RokoMobi Plugin
 
 + Plugin allows to integrate with RokoMobi Portal
