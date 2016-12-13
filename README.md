@@ -2,7 +2,7 @@
 
 + Plugin allows to integrate with RokoMobi Portal
 
-## Prerequisites
+# Prerequisites
 
 +  Install npm here - https://nodejs.org/en/
 or run in console
@@ -25,7 +25,7 @@ npm install -g react-native-cli
 
 [Use original React Native Docs](https://facebook.github.io/react-native/docs/getting-started.html)
 
-## Using Plugin
+# Using Plugin
 
 + Create a new React-Native
 
@@ -47,6 +47,7 @@ npm install react-native-rokomobi --save
 npm install react-native-button --save
 ```
 
+## Set User
 + [ios] Add code to your index.ios.js
 
 ```JavaScript
@@ -147,7 +148,7 @@ AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 
 ** check ** Copy items if needed
 
-+ [ios] Add your credientals to Info.plist
++ [ios] Add your credentials to Info.plist
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -381,6 +382,25 @@ Other fields of Params are :
 * **channelType** - "sms", "twitter", "facebook", "email" or "copy"
 * **linkId** - Optional Identifier of sharing portal link. Set this property if you share deep link to get correct reports on ROKO portal.
 
-## More Info
+# How to update **npm** plugins (RokoMobi too ;) )
+
++ Install console tool **ncu**
+```bash
+npm i -g npm-check-updates
+```
+
++ Check updated npm modules
+```bash
+ncu
+```
+
++ Update all modules
+```bash
+ncu -u
+npm install
+```
+
++
+# More Info
 
 * For more information about RokoMobi integration [the documentation](http://docs.roko.mobi/docs/cordova)
