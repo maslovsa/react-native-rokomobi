@@ -10,6 +10,7 @@
 #import "RCTConvert.h"
 #import <ROKOMobi/ROKOMobi.h>
 #import "ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h"
+#import "ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h"
 
 NSString *const kPromoCodeKey = @"promoCode";
 NSString *const kValueOfPurchaseKey = @"valueOfPurchase";
@@ -55,4 +56,21 @@ RCT_EXPORT_METHOD(markPromoCodeAsUsed:(NSDictionary*)params withCallBack:(RCTRes
   }
 }
 
+RCT_EXPORT_METHOD(loadUserPromoCodes:(RCTResponseSenderBlock)callback) {
+  ROKOPromo *promo = [[ROKOPromo alloc] init];
+  [promo loadUserPromoCodesWithCompletionBlock:^(NSArray<ROKOPromoCodeListItem *> * _Nullable promoCodes, NSError * _Nullable error) {
+    if (error) {
+      callback(@[error.description, @"Error"]);
+    } else {
+      NSMutableArray *promoCodeListItems = [[NSMutableArray alloc] init];
+      [promoCodeListItems addObject: [NSNull null]];
+      
+      for (ROKOPromoCodeListItem *item in promoCodes) {
+        NSDictionary *representation = [EKSerializer serializeObject:item withMapping:[ROKOPromoCodeListItem objectMapping]];
+        [promoCodeListItems addObject:representation];
+      }
+      callback(promoCodeListItems);
+    }
+  }];
+}
 @end
