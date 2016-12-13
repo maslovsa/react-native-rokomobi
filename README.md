@@ -386,7 +386,7 @@ Other fields of Params are :
 
 + Install console tool **ncu**
 ```bash
-npm i -g npm-check-updates
+npm install -g npm-check-updates
 ```
 
 + Check updated npm modules
@@ -401,6 +401,7 @@ npm install
 ```
 
 +
+
 # More Info
 
 * For more information about RokoMobi integration [the documentation](http://docs.roko.mobi/docs/cordova)
