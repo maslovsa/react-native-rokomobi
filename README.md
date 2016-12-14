@@ -403,7 +403,18 @@ ncu -u
 npm install
 ```
 
-+
+# Troubleshooting
+
+Reinstall npm and all npm_modules
+```bash
+sudo npm uninstall npm -g
+rm -rf /usr/local/bin/react-native
+```
+
+To reinstall all modules in your project-
+```bash
+rm -rf node_modules && npm install
+```
 
 # More Info
 
