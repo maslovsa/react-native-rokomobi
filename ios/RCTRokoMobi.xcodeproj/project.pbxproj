@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F9CC2F11E07CC2C00AA7F16 /* EasyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2AA1E07CC2C00AA7F16 /* EasyMapping.h */; };
+		8F9CC2F21E07CC2C00AA7F16 /* EKCoreDataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2AB1E07CC2C00AA7F16 /* EKCoreDataImporter.h */; };
+		8F9CC2F31E07CC2C00AA7F16 /* EKCoreDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2AC1E07CC2C00AA7F16 /* EKCoreDataImporter.m */; };
+		8F9CC2F41E07CC2C00AA7F16 /* EKManagedObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2AD1E07CC2C00AA7F16 /* EKManagedObjectMapper.h */; };
+		8F9CC2F51E07CC2C00AA7F16 /* EKManagedObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2AE1E07CC2C00AA7F16 /* EKManagedObjectMapper.m */; };
+		8F9CC2F61E07CC2C00AA7F16 /* EKManagedObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2AF1E07CC2C00AA7F16 /* EKManagedObjectMapping.h */; };
+		8F9CC2F71E07CC2C00AA7F16 /* EKManagedObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2B01E07CC2C00AA7F16 /* EKManagedObjectMapping.m */; };
+		8F9CC2F81E07CC2C00AA7F16 /* EKManagedObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2B11E07CC2C00AA7F16 /* EKManagedObjectModel.h */; };
+		8F9CC2F91E07CC2C00AA7F16 /* EKManagedObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2B21E07CC2C00AA7F16 /* EKManagedObjectModel.m */; };
+		8F9CC2FA1E07CC2C00AA7F16 /* EKMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2B31E07CC2C00AA7F16 /* EKMapper.h */; };
+		8F9CC2FB1E07CC2C00AA7F16 /* EKMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2B41E07CC2C00AA7F16 /* EKMapper.m */; };
+		8F9CC2FC1E07CC2C00AA7F16 /* EKMappingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2B51E07CC2C00AA7F16 /* EKMappingBlocks.h */; };
+		8F9CC2FD1E07CC2C00AA7F16 /* EKMappingBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2B61E07CC2C00AA7F16 /* EKMappingBlocks.m */; };
+		8F9CC2FE1E07CC2C00AA7F16 /* EKMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2B71E07CC2C00AA7F16 /* EKMappingProtocol.h */; };
+		8F9CC2FF1E07CC2C00AA7F16 /* EKObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2B81E07CC2C00AA7F16 /* EKObjectMapping.h */; };
+		8F9CC3001E07CC2C00AA7F16 /* EKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2B91E07CC2C00AA7F16 /* EKObjectMapping.m */; };
+		8F9CC3011E07CC2C00AA7F16 /* EKObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2BA1E07CC2C00AA7F16 /* EKObjectModel.h */; };
+		8F9CC3021E07CC2C00AA7F16 /* EKObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2BB1E07CC2C00AA7F16 /* EKObjectModel.m */; };
+		8F9CC3031E07CC2C00AA7F16 /* EKPropertyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2BC1E07CC2C00AA7F16 /* EKPropertyHelper.h */; };
+		8F9CC3041E07CC2C00AA7F16 /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2BD1E07CC2C00AA7F16 /* EKPropertyHelper.m */; };
+		8F9CC3051E07CC2C00AA7F16 /* EKPropertyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2BE1E07CC2C00AA7F16 /* EKPropertyMapping.h */; };
+		8F9CC3061E07CC2C00AA7F16 /* EKPropertyMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2BF1E07CC2C00AA7F16 /* EKPropertyMapping.m */; };
+		8F9CC3071E07CC2C00AA7F16 /* EKRelationshipMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2C01E07CC2C00AA7F16 /* EKRelationshipMapping.h */; };
+		8F9CC3081E07CC2C00AA7F16 /* EKRelationshipMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2C11E07CC2C00AA7F16 /* EKRelationshipMapping.m */; };
+		8F9CC3091E07CC2C00AA7F16 /* EKSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2C21E07CC2C00AA7F16 /* EKSerializer.h */; };
+		8F9CC30A1E07CC2C00AA7F16 /* EKSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2C31E07CC2C00AA7F16 /* EKSerializer.m */; };
+		8F9CC30B1E07CC2C00AA7F16 /* NSArray+FlattenArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2C41E07CC2C00AA7F16 /* NSArray+FlattenArray.h */; };
+		8F9CC30C1E07CC2C00AA7F16 /* NSArray+FlattenArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2C51E07CC2C00AA7F16 /* NSArray+FlattenArray.m */; };
+		8F9CC30D1E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2C61E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.h */; };
+		8F9CC30E1E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2C71E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.m */; };
+		8F9CC30F1E07CC2C00AA7F16 /* ROKOMobi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9CC2C91E07CC2C00AA7F16 /* ROKOMobi.framework */; };
+		8F9CC3101E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2CB1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.h */; };
+		8F9CC3111E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2CC1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.m */; };
+		8F9CC3121E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2CD1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.h */; };
+		8F9CC3131E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2CE1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.m */; };
+		8F9CC3141E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2CF1E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.h */; };
+		8F9CC3151E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2D01E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.m */; };
+		8F9CC3161E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2D11E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h */; };
+		8F9CC3171E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2D21E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m */; };
+		8F9CC3181E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2D31E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h */; };
+		8F9CC3191E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2D41E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m */; };
+		8F9CC31A1E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2D51E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h */; };
+		8F9CC31B1E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2D61E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m */; };
+		8F9CC31C1E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2D71E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h */; };
+		8F9CC31D1E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2D81E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m */; };
+		8F9CC31E1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2D91E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h */; };
+		8F9CC31F1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2DA1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m */; };
+		8F9CC3201E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2DB1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.h */; };
+		8F9CC3211E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2DC1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.m */; };
+		8F9CC3221E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2DD1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.h */; };
+		8F9CC3231E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2DE1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.m */; };
+		8F9CC3241E07CC2C00AA7F16 /* NSDictionary_RMParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2DF1E07CC2C00AA7F16 /* NSDictionary_RMParsing.h */; };
+		8F9CC3251E07CC2C00AA7F16 /* NSDictionary_RMParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2E01E07CC2C00AA7F16 /* NSDictionary_RMParsing.m */; };
+		8F9CC3261E07CC2C00AA7F16 /* RMEventEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2E11E07CC2C00AA7F16 /* RMEventEmitter.h */; };
+		8F9CC3271E07CC2C00AA7F16 /* RMEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2E21E07CC2C00AA7F16 /* RMEventEmitter.m */; };
+		8F9CC3281E07CC2C00AA7F16 /* RMInstabotManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2E31E07CC2C00AA7F16 /* RMInstabotManager.h */; };
+		8F9CC3291E07CC2C00AA7F16 /* RMInstabotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2E41E07CC2C00AA7F16 /* RMInstabotManager.m */; };
+		8F9CC32A1E07CC2C00AA7F16 /* RMLinkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2E51E07CC2C00AA7F16 /* RMLinkManager.h */; };
+		8F9CC32B1E07CC2C00AA7F16 /* RMLinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2E61E07CC2C00AA7F16 /* RMLinkManager.m */; };
+		8F9CC32C1E07CC2C00AA7F16 /* RMLoggerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2E71E07CC2C00AA7F16 /* RMLoggerManager.h */; };
+		8F9CC32D1E07CC2C00AA7F16 /* RMLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2E81E07CC2C00AA7F16 /* RMLoggerManager.m */; };
+		8F9CC32E1E07CC2C00AA7F16 /* RMPortalManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2E91E07CC2C00AA7F16 /* RMPortalManager.h */; };
+		8F9CC32F1E07CC2C00AA7F16 /* RMPortalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2EA1E07CC2C00AA7F16 /* RMPortalManager.m */; };
+		8F9CC3301E07CC2C00AA7F16 /* RMPromoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2EB1E07CC2C00AA7F16 /* RMPromoManager.h */; };
+		8F9CC3311E07CC2C00AA7F16 /* RMPromoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2EC1E07CC2C00AA7F16 /* RMPromoManager.m */; };
+		8F9CC3321E07CC2C00AA7F16 /* RMReferralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2ED1E07CC2C00AA7F16 /* RMReferralManager.h */; };
+		8F9CC3331E07CC2C00AA7F16 /* RMReferralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2EE1E07CC2C00AA7F16 /* RMReferralManager.m */; };
+		8F9CC3341E07CC2C00AA7F16 /* RMShareManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9CC2EF1E07CC2C00AA7F16 /* RMShareManager.h */; };
+		8F9CC3351E07CC2C00AA7F16 /* RMShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CC2F01E07CC2C00AA7F16 /* RMShareManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libRCTRokoMobi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTRokoMobi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9CC2AA1E07CC2C00AA7F16 /* EasyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
+		8F9CC2AB1E07CC2C00AA7F16 /* EKCoreDataImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKCoreDataImporter.h; sourceTree = "<group>"; };
+		8F9CC2AC1E07CC2C00AA7F16 /* EKCoreDataImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKCoreDataImporter.m; sourceTree = "<group>"; };
+		8F9CC2AD1E07CC2C00AA7F16 /* EKManagedObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectMapper.h; sourceTree = "<group>"; };
+		8F9CC2AE1E07CC2C00AA7F16 /* EKManagedObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectMapper.m; sourceTree = "<group>"; };
+		8F9CC2AF1E07CC2C00AA7F16 /* EKManagedObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectMapping.h; sourceTree = "<group>"; };
+		8F9CC2B01E07CC2C00AA7F16 /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectMapping.m; sourceTree = "<group>"; };
+		8F9CC2B11E07CC2C00AA7F16 /* EKManagedObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectModel.h; sourceTree = "<group>"; };
+		8F9CC2B21E07CC2C00AA7F16 /* EKManagedObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectModel.m; sourceTree = "<group>"; };
+		8F9CC2B31E07CC2C00AA7F16 /* EKMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMapper.h; sourceTree = "<group>"; };
+		8F9CC2B41E07CC2C00AA7F16 /* EKMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKMapper.m; sourceTree = "<group>"; };
+		8F9CC2B51E07CC2C00AA7F16 /* EKMappingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMappingBlocks.h; sourceTree = "<group>"; };
+		8F9CC2B61E07CC2C00AA7F16 /* EKMappingBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKMappingBlocks.m; sourceTree = "<group>"; };
+		8F9CC2B71E07CC2C00AA7F16 /* EKMappingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMappingProtocol.h; sourceTree = "<group>"; };
+		8F9CC2B81E07CC2C00AA7F16 /* EKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKObjectMapping.h; sourceTree = "<group>"; };
+		8F9CC2B91E07CC2C00AA7F16 /* EKObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKObjectMapping.m; sourceTree = "<group>"; };
+		8F9CC2BA1E07CC2C00AA7F16 /* EKObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKObjectModel.h; sourceTree = "<group>"; };
+		8F9CC2BB1E07CC2C00AA7F16 /* EKObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKObjectModel.m; sourceTree = "<group>"; };
+		8F9CC2BC1E07CC2C00AA7F16 /* EKPropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKPropertyHelper.h; sourceTree = "<group>"; };
+		8F9CC2BD1E07CC2C00AA7F16 /* EKPropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKPropertyHelper.m; sourceTree = "<group>"; };
+		8F9CC2BE1E07CC2C00AA7F16 /* EKPropertyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKPropertyMapping.h; sourceTree = "<group>"; };
+		8F9CC2BF1E07CC2C00AA7F16 /* EKPropertyMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKPropertyMapping.m; sourceTree = "<group>"; };
+		8F9CC2C01E07CC2C00AA7F16 /* EKRelationshipMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKRelationshipMapping.h; sourceTree = "<group>"; };
+		8F9CC2C11E07CC2C00AA7F16 /* EKRelationshipMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKRelationshipMapping.m; sourceTree = "<group>"; };
+		8F9CC2C21E07CC2C00AA7F16 /* EKSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSerializer.h; sourceTree = "<group>"; };
+		8F9CC2C31E07CC2C00AA7F16 /* EKSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSerializer.m; sourceTree = "<group>"; };
+		8F9CC2C41E07CC2C00AA7F16 /* NSArray+FlattenArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FlattenArray.h"; sourceTree = "<group>"; };
+		8F9CC2C51E07CC2C00AA7F16 /* NSArray+FlattenArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FlattenArray.m"; sourceTree = "<group>"; };
+		8F9CC2C61E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+EasyMappingAdditions.h"; sourceTree = "<group>"; };
+		8F9CC2C71E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+EasyMappingAdditions.m"; sourceTree = "<group>"; };
+		8F9CC2C91E07CC2C00AA7F16 /* ROKOMobi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ROKOMobi.framework; sourceTree = "<group>"; };
+		8F9CC2CB1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKODiscountItem+ROKODiscountItemMapper.h"; sourceTree = "<group>"; };
+		8F9CC2CC1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKODiscountItem+ROKODiscountItemMapper.m"; sourceTree = "<group>"; };
+		8F9CC2CD1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOLink+ROKOLinkMapper.h"; sourceTree = "<group>"; };
+		8F9CC2CE1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOLink+ROKOLinkMapper.m"; sourceTree = "<group>"; };
+		8F9CC2CF1E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOPortalInfo+ROKOPortalInfoMapper.h"; sourceTree = "<group>"; };
+		8F9CC2D01E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOPortalInfo+ROKOPortalInfoMapper.m"; sourceTree = "<group>"; };
+		8F9CC2D11E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h"; sourceTree = "<group>"; };
+		8F9CC2D21E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m"; sourceTree = "<group>"; };
+		8F9CC2D31E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h"; sourceTree = "<group>"; };
+		8F9CC2D41E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m"; sourceTree = "<group>"; };
+		8F9CC2D51E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h"; sourceTree = "<group>"; };
+		8F9CC2D61E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m"; sourceTree = "<group>"; };
+		8F9CC2D71E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h"; sourceTree = "<group>"; };
+		8F9CC2D81E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m"; sourceTree = "<group>"; };
+		8F9CC2D91E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h"; sourceTree = "<group>"; };
+		8F9CC2DA1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m"; sourceTree = "<group>"; };
+		8F9CC2DB1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOSessionInfo+ROKOSessionInfoMapper.h"; sourceTree = "<group>"; };
+		8F9CC2DC1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOSessionInfo+ROKOSessionInfoMapper.m"; sourceTree = "<group>"; };
+		8F9CC2DD1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROKOUserObject+ROKOUserObjectMapper.h"; sourceTree = "<group>"; };
+		8F9CC2DE1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ROKOUserObject+ROKOUserObjectMapper.m"; sourceTree = "<group>"; };
+		8F9CC2DF1E07CC2C00AA7F16 /* NSDictionary_RMParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_RMParsing.h; sourceTree = "<group>"; };
+		8F9CC2E01E07CC2C00AA7F16 /* NSDictionary_RMParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_RMParsing.m; sourceTree = "<group>"; };
+		8F9CC2E11E07CC2C00AA7F16 /* RMEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMEventEmitter.h; sourceTree = "<group>"; };
+		8F9CC2E21E07CC2C00AA7F16 /* RMEventEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMEventEmitter.m; sourceTree = "<group>"; };
+		8F9CC2E31E07CC2C00AA7F16 /* RMInstabotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMInstabotManager.h; sourceTree = "<group>"; };
+		8F9CC2E41E07CC2C00AA7F16 /* RMInstabotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMInstabotManager.m; sourceTree = "<group>"; };
+		8F9CC2E51E07CC2C00AA7F16 /* RMLinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLinkManager.h; sourceTree = "<group>"; };
+		8F9CC2E61E07CC2C00AA7F16 /* RMLinkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLinkManager.m; sourceTree = "<group>"; };
+		8F9CC2E71E07CC2C00AA7F16 /* RMLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoggerManager.h; sourceTree = "<group>"; };
+		8F9CC2E81E07CC2C00AA7F16 /* RMLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLoggerManager.m; sourceTree = "<group>"; };
+		8F9CC2E91E07CC2C00AA7F16 /* RMPortalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPortalManager.h; sourceTree = "<group>"; };
+		8F9CC2EA1E07CC2C00AA7F16 /* RMPortalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPortalManager.m; sourceTree = "<group>"; };
+		8F9CC2EB1E07CC2C00AA7F16 /* RMPromoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPromoManager.h; sourceTree = "<group>"; };
+		8F9CC2EC1E07CC2C00AA7F16 /* RMPromoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPromoManager.m; sourceTree = "<group>"; };
+		8F9CC2ED1E07CC2C00AA7F16 /* RMReferralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMReferralManager.h; sourceTree = "<group>"; };
+		8F9CC2EE1E07CC2C00AA7F16 /* RMReferralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMReferralManager.m; sourceTree = "<group>"; };
+		8F9CC2EF1E07CC2C00AA7F16 /* RMShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShareManager.h; sourceTree = "<group>"; };
+		8F9CC2F01E07CC2C00AA7F16 /* RMShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMShareManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9CC30F1E07CC2C00AA7F16 /* ROKOMobi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libRCTRokoMobi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				8F9CC2A81E07CC2C00AA7F16 /* RokoMobiFramework */,
+				134814211AA4EA7D00B7C361 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		8F9CC2A81E07CC2C00AA7F16 /* RokoMobiFramework */ = {
+			isa = PBXGroup;
+			children = (
+				8F9CC2A91E07CC2C00AA7F16 /* EasyMapping */,
+				8F9CC2C81E07CC2C00AA7F16 /* Frameworks */,
+				8F9CC2CA1E07CC2C00AA7F16 /* Mappers */,
+				8F9CC2DF1E07CC2C00AA7F16 /* NSDictionary_RMParsing.h */,
+				8F9CC2E01E07CC2C00AA7F16 /* NSDictionary_RMParsing.m */,
+				8F9CC2E11E07CC2C00AA7F16 /* RMEventEmitter.h */,
+				8F9CC2E21E07CC2C00AA7F16 /* RMEventEmitter.m */,
+				8F9CC2E31E07CC2C00AA7F16 /* RMInstabotManager.h */,
+				8F9CC2E41E07CC2C00AA7F16 /* RMInstabotManager.m */,
+				8F9CC2E51E07CC2C00AA7F16 /* RMLinkManager.h */,
+				8F9CC2E61E07CC2C00AA7F16 /* RMLinkManager.m */,
+				8F9CC2E71E07CC2C00AA7F16 /* RMLoggerManager.h */,
+				8F9CC2E81E07CC2C00AA7F16 /* RMLoggerManager.m */,
+				8F9CC2E91E07CC2C00AA7F16 /* RMPortalManager.h */,
+				8F9CC2EA1E07CC2C00AA7F16 /* RMPortalManager.m */,
+				8F9CC2EB1E07CC2C00AA7F16 /* RMPromoManager.h */,
+				8F9CC2EC1E07CC2C00AA7F16 /* RMPromoManager.m */,
+				8F9CC2ED1E07CC2C00AA7F16 /* RMReferralManager.h */,
+				8F9CC2EE1E07CC2C00AA7F16 /* RMReferralManager.m */,
+				8F9CC2EF1E07CC2C00AA7F16 /* RMShareManager.h */,
+				8F9CC2F01E07CC2C00AA7F16 /* RMShareManager.m */,
+			);
+			path = RokoMobiFramework;
+			sourceTree = "<group>";
+		};
+		8F9CC2A91E07CC2C00AA7F16 /* EasyMapping */ = {
+			isa = PBXGroup;
+			children = (
+				8F9CC2AA1E07CC2C00AA7F16 /* EasyMapping.h */,
+				8F9CC2AB1E07CC2C00AA7F16 /* EKCoreDataImporter.h */,
+				8F9CC2AC1E07CC2C00AA7F16 /* EKCoreDataImporter.m */,
+				8F9CC2AD1E07CC2C00AA7F16 /* EKManagedObjectMapper.h */,
+				8F9CC2AE1E07CC2C00AA7F16 /* EKManagedObjectMapper.m */,
+				8F9CC2AF1E07CC2C00AA7F16 /* EKManagedObjectMapping.h */,
+				8F9CC2B01E07CC2C00AA7F16 /* EKManagedObjectMapping.m */,
+				8F9CC2B11E07CC2C00AA7F16 /* EKManagedObjectModel.h */,
+				8F9CC2B21E07CC2C00AA7F16 /* EKManagedObjectModel.m */,
+				8F9CC2B31E07CC2C00AA7F16 /* EKMapper.h */,
+				8F9CC2B41E07CC2C00AA7F16 /* EKMapper.m */,
+				8F9CC2B51E07CC2C00AA7F16 /* EKMappingBlocks.h */,
+				8F9CC2B61E07CC2C00AA7F16 /* EKMappingBlocks.m */,
+				8F9CC2B71E07CC2C00AA7F16 /* EKMappingProtocol.h */,
+				8F9CC2B81E07CC2C00AA7F16 /* EKObjectMapping.h */,
+				8F9CC2B91E07CC2C00AA7F16 /* EKObjectMapping.m */,
+				8F9CC2BA1E07CC2C00AA7F16 /* EKObjectModel.h */,
+				8F9CC2BB1E07CC2C00AA7F16 /* EKObjectModel.m */,
+				8F9CC2BC1E07CC2C00AA7F16 /* EKPropertyHelper.h */,
+				8F9CC2BD1E07CC2C00AA7F16 /* EKPropertyHelper.m */,
+				8F9CC2BE1E07CC2C00AA7F16 /* EKPropertyMapping.h */,
+				8F9CC2BF1E07CC2C00AA7F16 /* EKPropertyMapping.m */,
+				8F9CC2C01E07CC2C00AA7F16 /* EKRelationshipMapping.h */,
+				8F9CC2C11E07CC2C00AA7F16 /* EKRelationshipMapping.m */,
+				8F9CC2C21E07CC2C00AA7F16 /* EKSerializer.h */,
+				8F9CC2C31E07CC2C00AA7F16 /* EKSerializer.m */,
+				8F9CC2C41E07CC2C00AA7F16 /* NSArray+FlattenArray.h */,
+				8F9CC2C51E07CC2C00AA7F16 /* NSArray+FlattenArray.m */,
+				8F9CC2C61E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.h */,
+				8F9CC2C71E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.m */,
+			);
+			path = EasyMapping;
+			sourceTree = "<group>";
+		};
+		8F9CC2C81E07CC2C00AA7F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F9CC2C91E07CC2C00AA7F16 /* ROKOMobi.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9CC2CA1E07CC2C00AA7F16 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				8F9CC2CB1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.h */,
+				8F9CC2CC1E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.m */,
+				8F9CC2CD1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.h */,
+				8F9CC2CE1E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.m */,
+				8F9CC2CF1E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.h */,
+				8F9CC2D01E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.m */,
+				8F9CC2D11E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h */,
+				8F9CC2D21E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m */,
+				8F9CC2D31E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h */,
+				8F9CC2D41E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m */,
+				8F9CC2D51E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h */,
+				8F9CC2D61E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m */,
+				8F9CC2D71E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h */,
+				8F9CC2D81E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m */,
+				8F9CC2D91E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h */,
+				8F9CC2DA1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m */,
+				8F9CC2DB1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.h */,
+				8F9CC2DC1E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.m */,
+				8F9CC2DD1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.h */,
+				8F9CC2DE1E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.m */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F9CC2151E041EEC00AA7F16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9CC2F41E07CC2C00AA7F16 /* EKManagedObjectMapper.h in Headers */,
+				8F9CC3261E07CC2C00AA7F16 /* RMEventEmitter.h in Headers */,
+				8F9CC2FC1E07CC2C00AA7F16 /* EKMappingBlocks.h in Headers */,
+				8F9CC31C1E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.h in Headers */,
+				8F9CC31E1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.h in Headers */,
+				8F9CC3201E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.h in Headers */,
+				8F9CC3221E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.h in Headers */,
+				8F9CC30B1E07CC2C00AA7F16 /* NSArray+FlattenArray.h in Headers */,
+				8F9CC3341E07CC2C00AA7F16 /* RMShareManager.h in Headers */,
+				8F9CC31A1E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.h in Headers */,
+				8F9CC3281E07CC2C00AA7F16 /* RMInstabotManager.h in Headers */,
+				8F9CC3121E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.h in Headers */,
+				8F9CC2F81E07CC2C00AA7F16 /* EKManagedObjectModel.h in Headers */,
+				8F9CC3161E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.h in Headers */,
+				8F9CC2F11E07CC2C00AA7F16 /* EasyMapping.h in Headers */,
+				8F9CC3101E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.h in Headers */,
+				8F9CC3301E07CC2C00AA7F16 /* RMPromoManager.h in Headers */,
+				8F9CC2FA1E07CC2C00AA7F16 /* EKMapper.h in Headers */,
+				8F9CC2FF1E07CC2C00AA7F16 /* EKObjectMapping.h in Headers */,
+				8F9CC3321E07CC2C00AA7F16 /* RMReferralManager.h in Headers */,
+				8F9CC30D1E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.h in Headers */,
+				8F9CC3091E07CC2C00AA7F16 /* EKSerializer.h in Headers */,
+				8F9CC32E1E07CC2C00AA7F16 /* RMPortalManager.h in Headers */,
+				8F9CC3051E07CC2C00AA7F16 /* EKPropertyMapping.h in Headers */,
+				8F9CC3241E07CC2C00AA7F16 /* NSDictionary_RMParsing.h in Headers */,
+				8F9CC2F61E07CC2C00AA7F16 /* EKManagedObjectMapping.h in Headers */,
+				8F9CC3031E07CC2C00AA7F16 /* EKPropertyHelper.h in Headers */,
+				8F9CC3071E07CC2C00AA7F16 /* EKRelationshipMapping.h in Headers */,
+				8F9CC2F21E07CC2C00AA7F16 /* EKCoreDataImporter.h in Headers */,
+				8F9CC32A1E07CC2C00AA7F16 /* RMLinkManager.h in Headers */,
+				8F9CC2FE1E07CC2C00AA7F16 /* EKMappingProtocol.h in Headers */,
+				8F9CC32C1E07CC2C00AA7F16 /* RMLoggerManager.h in Headers */,
+				8F9CC3181E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.h in Headers */,
+				8F9CC3141E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.h in Headers */,
+				8F9CC3011E07CC2C00AA7F16 /* EKObjectModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* RCTRokoMobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTRokoMobi" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				8F9CC2151E041EEC00AA7F16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTRokoMobi;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libRCTRokoMobi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTRokoMobi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* RCTRokoMobi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9CC31B1E07CC2C00AA7F16 /* ROKOReferralCampaignInfo+ROKOReferralCampaignInfoMapper.m in Sources */,
+				8F9CC30E1E07CC2C00AA7F16 /* NSDateFormatter+EasyMappingAdditions.m in Sources */,
+				8F9CC32F1E07CC2C00AA7F16 /* RMPortalManager.m in Sources */,
+				8F9CC3001E07CC2C00AA7F16 /* EKObjectMapping.m in Sources */,
+				8F9CC2F31E07CC2C00AA7F16 /* EKCoreDataImporter.m in Sources */,
+				8F9CC3311E07CC2C00AA7F16 /* RMPromoManager.m in Sources */,
+				8F9CC3081E07CC2C00AA7F16 /* EKRelationshipMapping.m in Sources */,
+				8F9CC30A1E07CC2C00AA7F16 /* EKSerializer.m in Sources */,
+				8F9CC3291E07CC2C00AA7F16 /* RMInstabotManager.m in Sources */,
+				8F9CC3251E07CC2C00AA7F16 /* NSDictionary_RMParsing.m in Sources */,
+				8F9CC3021E07CC2C00AA7F16 /* EKObjectModel.m in Sources */,
+				8F9CC3271E07CC2C00AA7F16 /* RMEventEmitter.m in Sources */,
+				8F9CC3171E07CC2C00AA7F16 /* ROKOPromoCodeListItem+ROKOPromoCodeListItemMapper.m in Sources */,
+				8F9CC31F1E07CC2C00AA7F16 /* ROKOReferralDiscountItem+ROKOReferralDiscountItemMapper.m in Sources */,
+				8F9CC31D1E07CC2C00AA7F16 /* ROKOReferralDiscountInfo+ROKOReferralDiscountInfoMapper.m in Sources */,
+				8F9CC3231E07CC2C00AA7F16 /* ROKOUserObject+ROKOUserObjectMapper.m in Sources */,
+				8F9CC3131E07CC2C00AA7F16 /* ROKOLink+ROKOLinkMapper.m in Sources */,
+				8F9CC32D1E07CC2C00AA7F16 /* RMLoggerManager.m in Sources */,
+				8F9CC3191E07CC2C00AA7F16 /* ROKOPromoDiscountItem+ROKOPromoDiscountItemMapper.m in Sources */,
+				8F9CC2F51E07CC2C00AA7F16 /* EKManagedObjectMapper.m in Sources */,
+				8F9CC3351E07CC2C00AA7F16 /* RMShareManager.m in Sources */,
+				8F9CC3041E07CC2C00AA7F16 /* EKPropertyHelper.m in Sources */,
+				8F9CC2FD1E07CC2C00AA7F16 /* EKMappingBlocks.m in Sources */,
+				8F9CC3151E07CC2C00AA7F16 /* ROKOPortalInfo+ROKOPortalInfoMapper.m in Sources */,
+				8F9CC2F91E07CC2C00AA7F16 /* EKManagedObjectModel.m in Sources */,
+				8F9CC3111E07CC2C00AA7F16 /* ROKODiscountItem+ROKODiscountItemMapper.m in Sources */,
+				8F9CC2F71E07CC2C00AA7F16 /* EKManagedObjectMapping.m in Sources */,
+				8F9CC2FB1E07CC2C00AA7F16 /* EKMapper.m in Sources */,
+				8F9CC3331E07CC2C00AA7F16 /* RMReferralManager.m in Sources */,
+				8F9CC3211E07CC2C00AA7F16 /* ROKOSessionInfo+ROKOSessionInfoMapper.m in Sources */,
+				8F9CC30C1E07CC2C00AA7F16 /* NSArray+FlattenArray.m in Sources */,
+				8F9CC32B1E07CC2C00AA7F16 /* RMLinkManager.m in Sources */,
+				8F9CC3061E07CC2C00AA7F16 /* EKPropertyMapping.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wextra",
+					"-Wall",
+				);
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wextra",
+					"-Wall",
+				);
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RokoMobiFramework/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RCTRokoMobi;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RokoMobiFramework/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RCTRokoMobi;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RCTRokoMobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTRokoMobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}
